@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0b2545">
+  <title>Lucky Infra Hub</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="https://img.icons8.com/color/192/light-on.png">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/color/192/light-on.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #0b2545; }
+    iframe { width: 100%; height: 100%; border: none; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Replace YOUR_WEB_APP_URL below with your script.google.com/macros/s/.../exec link -->
+  <iframe src="YOUR_WEB_APP_URL" allow="camera; microphone"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
